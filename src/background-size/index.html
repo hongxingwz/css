@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-size</title>
+    <style>
+        .block {
+            height: 300px;
+            width: 400px;
+            border: 1px solid #ccc;
+            background-image: url("../../assets/images/eg_smile.gif");
+            background-repeat: no-repeat;
+            float:left;
+        }
+
+        .one {
+            background-size: 100px 100px;
+        }
+
+        .two {
+            background-size: 75px 75px;
+        }
+        .three {
+            background-size: 10px 150px;
+        }
+        .four {
+            background-size: 200px;
+        }
+        .five {
+            background-size: 50%;
+        }
+        .six {
+            background-size:100% 100%;
+        }
+        .seven {
+            background-size: cover;
+        }
+        .eight {
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+<div class="block one">
+    background-size: 100px 100px;
+</div>
+<div class="block two">
+    background-size: 75px 75px;
+</div>
+<div class="block three">
+    background-size: 10px 150px;
+</div>
+<div class="block four">
+    background-size: 200px;
+</div>
+<div class="block five">
+    background-size: 50%;
+</div>
+<div class="block six">
+    background-size:100% 100%;
+</div>
+<div class="block seven">
+    background-size: cover;
+</div>
+<div class="block eight">
+    background-size: contain;
+</div>
+</body>
+</html>

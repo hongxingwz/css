@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="http://img.mukewang.com/53e2e9470001dfd200500050.jpg"/>
+</div>
+<button id="btn" class="a b">点击我让.box元素具有左浮动效果</button>
+</body>
+<script>
+    let btn = document.getElementById("btn")
+    btn.addEventListener('click', function () {
+        let classNameArr = btn.className.split(' ');
+        if (classNameArr.indexOf('floatLeft') === -1) {
+            let boxs = document.getElementsByClassName('box');
+            for (let i = 0, ind = boxs.length; i < ind; i++) {
+                let boxDom = boxs[i]
+                boxDom.style.float = 'left';
+            }
+            btn.className += ' floatLeft';
+            btn.innerText = '点击我去除.box的 float 属性'
+        } else {
+            let boxs = document.getElementsByClassName('box');
+            for (let i = 0, ind = boxs.length; i < ind; i++) {
+                let boxDom = boxs[i]
+                boxDom.style.float = 'none';
+            }
+            let ind  =classNameArr.indexOf('floatLeft')
+            classNameArr.splice(ind, 1);
+            btn.className = classNameArr.join(' ');
+            btn.innerText = '点击我让.box元素具有左浮动效果'
+        }
+    });
+</script>
+</html>

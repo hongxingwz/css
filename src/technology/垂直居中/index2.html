@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多行文本垂直居中</title>
+    <style>
+        html {
+            font-size: 16px;
+
+        }
+        .box {
+            border: 2px solid #ddd;
+            height: 10rem;
+            display: table-cell;
+            vertical-align: middle;
+
+        }
+
+        .box span {
+            /*display: inline-block;*/
+            /*vertical-align: middle;*/
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <span>
+        这里的文字用来做多行文字垂直居中对齐的测试。 <br/>
+        这是第二行文字，您还可以再添加一行文字做测试！
+    </span>
+</div>
+</body>
+</html>

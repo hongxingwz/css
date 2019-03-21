@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>margin 为负对浮动的影响</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        .container:after {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+        .flb {
+            float: left;
+            width: 100px;
+            height: 100px;
+
+            margin-left: -25px;
+            margin-bottom: -25px;
+        }
+
+        .flbox1{background-color: rgba(33, 114, 214, 0.8);}
+        .flbox2{background-color: rgba(255, 82, 0, 0.8);}
+        .flbox3{background-color: rgba(90, 243, 151, 0.8);}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="flb flbox1">box1</div>
+    <div class="flb flbox2">box2</div>
+    <div class="flb flbox3">box3</div>
+</div>
+</body>
+</html>

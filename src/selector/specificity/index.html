@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器的特殊性</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        body h1 {
+            color: green;
+        }
+
+
+
+        h2.grape {
+            color: purple;
+        }
+        h2 {
+            color: silver;
+        }
+
+
+        html > body table tr[id="totals"] td ul > li {
+            color: maroon;
+        }
+        li#answer {
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+<h1>Hello this is h1 title</h1>
+
+<h2 class="grape">Hello This is h2 title</h2>
+
+<table>
+    <tr id="totals">
+        <td>
+            <ul>
+                <li>Hello, This is Li element</li>
+                <li id="answer">Hello, This is Li element</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

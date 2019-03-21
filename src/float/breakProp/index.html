@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="http://img.mukewang.com/53e2e9470001dfd200500050.jpg"/>
+</div>
+<button id="btn" class="a b">点击我让img元素具有左浮动效果</button>
+</body>
+<script>
+    let btnDom = document.getElementById('btn');
+    btnDom.addEventListener('click', function () {
+        let imgsDom = document.getElementsByTagName('img');
+        for (let i = 0, len = imgsDom.length; i < len; i++) {
+            let imgDom = imgsDom[i];
+            imgDom.style.float = 'left'
+        }
+    });
+</script>
+</html>

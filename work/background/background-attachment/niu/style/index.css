@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    body: 0;
+}
+
+
+.section-head {
+    height: 749px;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url("../images/niu.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+}
+.abs-text {
+    position: absolute;
+    left: 50%;
+}
+.section-head .abs-text {
+    top: 300px;
+    margin-left: -540px;
+    color: #fff;
+}

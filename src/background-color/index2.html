@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>随风丶逆风</title>
+    <style>
+        div{
+            margin: 0 auto;
+        }
+        .parentBox{
+            height: 200px;
+            width: 300px;
+            background-color: #f00;
+        }
+
+        .childBox{
+            height: 200px;
+            width: 200px;
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+<div class="parentBox">
+    <div class="childBox"></div>
+</div>
+</body>
+<script>
+    window.onload=function(){
+        let parent = document.getElementsByClassName("parentBox")[0];
+        parent.addEventListener("mouseenter",()=>console.log("Mouse Enter"));
+        parent.addEventListener("mouseleave",()=>console.log("Mouse Leave"));
+        parent.addEventListener("mouseover",(e)=>{
+            console.log("Mouse Over")
+        });
+        parent.addEventListener("mouseout",(e)=>{
+            console.log("Mouse Out")
+        });
+    }
+</script>
+</html>

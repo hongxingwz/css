@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .triangle {
+            border-style: solid;
+            border-width: 50px;
+            border-color: transparent;
+            width: 0;
+            height: 0;
+        }
+
+        .triangle-bottom {
+            border-bottom-color: red;
+            border-top: none;
+        }
+        .triangle-top {
+            border-top-color: red;
+            border-bottom: none;
+        }
+
+        .triangle-left {
+            border-left-color: red;
+            border-right: none;
+            position: relative;
+            left: 50px;
+        }
+
+        .triangle-right {
+            border-right-color: red;
+            border-left: none;
+        }
+
+        .triangle-top-left-zhi {
+            border-left-color: red;
+            border-top-color: red;
+        }
+
+        .triangle-top-right-zhi {
+            border-right-color: red;
+            border-top-color: red;
+        }
+
+        .triangle-bottom-left-zhi {
+            border-left-color: red;
+            border-bottom-color: red;
+        }
+
+        .triangle-bottom-right-zhi {
+            border-bottom-color: red;
+            border-right-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="triangle triangle-bottom"></div>
+<div class="triangle triangle-top"></div>
+<div class="triangle triangle-left"></div>
+<div class="triangle triangle-right"></div>
+<div class="triangle triangle-top-left-zhi"></div>
+<div class="triangle triangle-top-right-zhi"></div>
+<div class="triangle triangle-bottom-left-zhi"></div>
+<div class="triangle triangle-bottom-right-zhi"></div>
+</body>
+</html>
